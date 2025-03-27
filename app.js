@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const posts = require('./data/posts.js');
 const port = 3000;
 
 
