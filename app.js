@@ -13,6 +13,15 @@ app.get('/', (req, res) => {
 
 });
 
+// GET bacheca
+app.get('/bacheca', (req, res) => {
+
+  console.log('Sto chiamando la Bacheca del mio blog');
+
+  res.json(posts);
+
+});
+
 
 
 app.listen(3000, () => {
