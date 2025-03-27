@@ -7,9 +7,8 @@ const port = 3000;
 app.use(express.static('public'));
 
 
-// GET homepage
+// homepage
 app.get('/', (req, res) => {
-  console.log('Sto chiamando la Hompage del mio blog');
   res.send('Server del mio blog');
 });
 
