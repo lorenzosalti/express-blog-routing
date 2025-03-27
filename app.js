@@ -4,23 +4,18 @@ const posts = require('./data/posts.js');
 const port = 3000;
 
 
+app.use(express.static('public'));
+
+
 // GET homepage
 app.get('/', (req, res) => {
-
   console.log('Sto chiamando la Hompage del mio blog');
-
   res.send('Server del mio blog');
-
 });
 
-// GET bacheca
-app.get('/bacheca', (req, res) => {
 
-  console.log('Sto chiamando la Bacheca del mio blog');
 
-  res.json(posts);
 
-});
 
 
 
